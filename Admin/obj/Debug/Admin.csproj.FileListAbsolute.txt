@@ -23,3 +23,46 @@ D:\Project\New folder\MasteringIt\Admin\bin\Debug\CodeHelper.dll.config
 D:\Project\New folder\MasteringIt\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache
 D:\Project\New folder\MasteringIt\Admin\obj\Debug\Admin.AdminLevel.InsertForm.resources
 D:\Project\New folder\MasteringIt\Admin\obj\Debug\Admin.AdminLevel.UpdateLevel.resources
+D:\Project\MasteringIt\Admin\bin\Debug\Admin.exe.config
+D:\Project\MasteringIt\Admin\bin\Debug\Admin.exe
+D:\Project\MasteringIt\Admin\bin\Debug\Admin.pdb
+D:\Project\MasteringIt\Admin\bin\Debug\BusinessLogic.dll
+D:\Project\MasteringIt\Admin\bin\Debug\DatabaseObject.dll
+D:\Project\MasteringIt\Admin\bin\Debug\DatabaseAccess.dll
+D:\Project\MasteringIt\Admin\bin\Debug\EntityFramework.dll
+D:\Project\MasteringIt\Admin\bin\Debug\CodeHelper.dll
+D:\Project\MasteringIt\Admin\bin\Debug\BusinessLogic.pdb
+D:\Project\MasteringIt\Admin\bin\Debug\BusinessLogic.dll.config
+D:\Project\MasteringIt\Admin\bin\Debug\DatabaseObject.pdb
+D:\Project\MasteringIt\Admin\bin\Debug\DatabaseObject.dll.config
+D:\Project\MasteringIt\Admin\bin\Debug\DatabaseAccess.pdb
+D:\Project\MasteringIt\Admin\bin\Debug\DatabaseAccess.dll.config
+D:\Project\MasteringIt\Admin\bin\Debug\EntityFramework.xml
+D:\Project\MasteringIt\Admin\bin\Debug\CodeHelper.pdb
+D:\Project\MasteringIt\Admin\bin\Debug\CodeHelper.dll.config
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminLevel.InsertForm.resources
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.MainForm.resources
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.Properties.Resources.resources
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.csproj.GenerateResource.Cache
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.exe
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.pdb
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminLevel.UpdateForm.resources
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminLevel.ListForm.resources
+D:\Project\MasteringIt\Admin\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\MasteringIt\Admin\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminMember.ListForm.resources
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminGame.ListForm.resources
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminTeam.ListForm.resources
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminGame.InsertForm.resources
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminTeam.InsertForm.resources
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminGame.UpdateForm.resources
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminTeam.UpdateForm.resources
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminMember.UpdateForm.resources
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminMember.InsertForm.resources
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminQuestion.InsertForm.resources
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminQuestion.ListForm.resources
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminQuestion.UpdateForm.resources
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminAnswer.InsertForm.resources
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminAnswer.ListForm.resources
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminAnswer.UpdateForm.resources

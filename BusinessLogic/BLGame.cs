@@ -44,5 +44,12 @@ namespace BusinessLogic
         {
             return db.Games.Find(Id);
         }
+
+        public List<Game> GetByLevel(Guid LevelId)
+        {
+            return db.Games
+                .Where(x => x.LevelId == LevelId)
+                .ToList<Game>();
+        }
     }
 }

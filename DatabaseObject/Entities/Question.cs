@@ -19,6 +19,7 @@ namespace DatabaseObject.Entities
         }
         [Key]
         public Guid Id { get; set; }
+        public string QuestionLabel { get; set; }
         public string QuestionName { get; set; }
 
         public virtual IList<Answer> Answers { get; set; }

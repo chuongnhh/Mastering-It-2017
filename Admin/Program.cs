@@ -16,7 +16,7 @@ namespace Admin
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminLevel.InsertForm());
+            Application.Run(new MainForm());
         }
     }
 }

@@ -20,10 +20,12 @@ namespace BusinessLogic
 
         public void Update(Score s)
         {
-            var score = db.Scores.Find(s.GameId, s.TeamId, s.LevelId);
+            var score = Get(s.TeamId, s.LevelId, s.GameId);
+
             score.TeamId = s.TeamId;
             score.GameId = s.GameId;
             score.LevelId = s.LevelId;
+            score.ScoreNumber = s.ScoreNumber;
 
             db.SaveChanges();
         }
@@ -44,5 +46,11 @@ namespace BusinessLogic
         {
             return db.Scores.Find(Id);
         }
+
+        public Score Get(Guid TeamId, Guid LevelId, Guid GameId)
+        {
+            return db.Scores.Where(x => x.TeamId == TeamId && x.LevelId == LevelId && x.GameId == GameId).FirstOrDefault<Score>();
+        }
+
     }
 }

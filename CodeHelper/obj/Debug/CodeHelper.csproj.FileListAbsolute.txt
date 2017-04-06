@@ -8,3 +8,12 @@ D:\Project\New folder\MasteringIt\CodeHelper\bin\Debug\EntityFramework.SqlServer
 D:\Project\New folder\MasteringIt\CodeHelper\bin\Debug\EntityFramework.xml
 D:\Project\New folder\MasteringIt\CodeHelper\bin\Debug\EntityFramework.SqlServer.xml
 D:\Project\New folder\MasteringIt\CodeHelper\obj\Debug\CodeHelper.csprojResolveAssemblyReference.cache
+D:\Project\MasteringIt\CodeHelper\bin\Debug\CodeHelper.dll.config
+D:\Project\MasteringIt\CodeHelper\bin\Debug\CodeHelper.dll
+D:\Project\MasteringIt\CodeHelper\bin\Debug\CodeHelper.pdb
+D:\Project\MasteringIt\CodeHelper\bin\Debug\EntityFramework.dll
+D:\Project\MasteringIt\CodeHelper\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\MasteringIt\CodeHelper\bin\Debug\EntityFramework.xml
+D:\Project\MasteringIt\CodeHelper\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\MasteringIt\CodeHelper\obj\Debug\CodeHelper.dll
+D:\Project\MasteringIt\CodeHelper\obj\Debug\CodeHelper.pdb

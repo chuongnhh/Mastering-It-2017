@@ -38,7 +38,7 @@
             // 
             this.txtLevelName.Location = new System.Drawing.Point(78, 12);
             this.txtLevelName.Name = "txtLevelName";
-            this.txtLevelName.Size = new System.Drawing.Size(328, 20);
+            this.txtLevelName.Size = new System.Drawing.Size(328, 22);
             this.txtLevelName.TabIndex = 0;
             // 
             // label1
@@ -80,10 +80,11 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtLevelName);
+            this.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "InsertForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thêm hệ thi";
             this.ResumeLayout(false);
             this.PerformLayout();

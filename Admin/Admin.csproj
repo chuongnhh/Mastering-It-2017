@@ -32,7 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -45,17 +52,113 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminAnswer\InsertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAnswer\InsertForm.Designer.cs">
+      <DependentUpon>InsertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAnswer\ListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAnswer\ListForm.Designer.cs">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAnswer\UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAnswer\UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGame\InsertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGame\InsertForm.Designer.cs">
+      <DependentUpon>InsertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGame\ListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGame\ListForm.Designer.cs">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGame\UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGame\UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminLevel\InsertForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminLevel\InsertForm.Designer.cs">
       <DependentUpon>InsertForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminLevel\UpdateLevel.cs">
+    <Compile Include="AdminLevel\ListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminLevel\UpdateLevel.Designer.cs">
-      <DependentUpon>UpdateLevel.cs</DependentUpon>
+    <Compile Include="AdminLevel\ListForm.Designer.cs">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLevel\UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLevel\UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMember\InsertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMember\InsertForm.Designer.cs">
+      <DependentUpon>InsertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMember\ListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMember\ListForm.Designer.cs">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMember\UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMember\UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminQuestion\InsertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminQuestion\InsertForm.Designer.cs">
+      <DependentUpon>InsertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminQuestion\ListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminQuestion\ListForm.Designer.cs">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminQuestion\UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminQuestion\UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminTeam\InsertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminTeam\InsertForm.Designer.cs">
+      <DependentUpon>InsertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminTeam\ListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminTeam\ListForm.Designer.cs">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminTeam\UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminTeam\UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -65,11 +168,59 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminAnswer\InsertForm.resx">
+      <DependentUpon>InsertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminAnswer\ListForm.resx">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminAnswer\UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGame\InsertForm.resx">
+      <DependentUpon>InsertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGame\ListForm.resx">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGame\UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminLevel\InsertForm.resx">
       <DependentUpon>InsertForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminLevel\UpdateLevel.resx">
-      <DependentUpon>UpdateLevel.cs</DependentUpon>
+    <EmbeddedResource Include="AdminLevel\ListForm.resx">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLevel\UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMember\InsertForm.resx">
+      <DependentUpon>InsertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMember\ListForm.resx">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMember\UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminQuestion\InsertForm.resx">
+      <DependentUpon>InsertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminQuestion\ListForm.resx">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminQuestion\UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminTeam\InsertForm.resx">
+      <DependentUpon>InsertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminTeam\ListForm.resx">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminTeam\UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -83,6 +234,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -107,12 +259,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AdminAnswer\" />
-    <Folder Include="AdminGame\" />
-    <Folder Include="AdminMember\" />
-    <Folder Include="AdminQuestion\" />
     <Folder Include="AdminScore\" />
-    <Folder Include="AdminTeam\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

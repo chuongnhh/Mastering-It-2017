@@ -48,13 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MasteringItDbContext.cs" />
-    <Compile Include="Migrations\201702200326045_InitialCreate.cs" />
-    <Compile Include="Migrations\201702200326045_InitialCreate.Designer.cs">
-      <DependentUpon>201702200326045_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702200647574_update-db-v1.0.cs" />
-    <Compile Include="Migrations\201702200647574_update-db-v1.0.Designer.cs">
-      <DependentUpon>201702200647574_update-db-v1.0.cs</DependentUpon>
+    <Compile Include="Migrations\201704050114183_v1.cs" />
+    <Compile Include="Migrations\201704050114183_v1.Designer.cs">
+      <DependentUpon>201704050114183_v1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,11 +66,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702200326045_InitialCreate.resx">
-      <DependentUpon>201702200326045_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702200647574_update-db-v1.0.resx">
-      <DependentUpon>201702200647574_update-db-v1.0.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201704050114183_v1.resx">
+      <DependentUpon>201704050114183_v1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

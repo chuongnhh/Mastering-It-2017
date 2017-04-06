@@ -43,5 +43,13 @@ namespace BusinessLogic
         {
             return db.Teams.Find(Id);
         }
+
+        public List<Team> GetByLevel(Guid LevelId)
+        {
+            return db.Teams
+                .Where(x=>x.LevelId==LevelId)
+                .ToList<Team>();
+        }
+
     }
 }

@@ -18,7 +18,7 @@ namespace DatabaseObject.Entities
         }
         [Key]
         public Guid Id { get; set; }
-        public Guid AnswerLeter { get; set; }
+        public string AnswerLabel { get; set; }
         public string AnswerName { get; set; }
         public bool IsTrue { get; set; }
 

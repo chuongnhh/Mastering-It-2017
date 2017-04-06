@@ -17,3 +17,22 @@ D:\Project\New folder\MasteringIt\BusinessLogic\bin\Debug\DatabaseObject.pdb
 D:\Project\New folder\MasteringIt\BusinessLogic\bin\Debug\DatabaseObject.dll.config
 D:\Project\New folder\MasteringIt\BusinessLogic\bin\Debug\CodeHelper.pdb
 D:\Project\New folder\MasteringIt\BusinessLogic\bin\Debug\CodeHelper.dll.config
+D:\Project\MasteringIt\BusinessLogic\bin\Debug\BusinessLogic.dll.config
+D:\Project\MasteringIt\BusinessLogic\bin\Debug\BusinessLogic.dll
+D:\Project\MasteringIt\BusinessLogic\bin\Debug\BusinessLogic.pdb
+D:\Project\MasteringIt\BusinessLogic\bin\Debug\DatabaseAccess.dll
+D:\Project\MasteringIt\BusinessLogic\bin\Debug\DatabaseObject.dll
+D:\Project\MasteringIt\BusinessLogic\bin\Debug\EntityFramework.dll
+D:\Project\MasteringIt\BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\MasteringIt\BusinessLogic\bin\Debug\CodeHelper.dll
+D:\Project\MasteringIt\BusinessLogic\bin\Debug\DatabaseAccess.pdb
+D:\Project\MasteringIt\BusinessLogic\bin\Debug\DatabaseAccess.dll.config
+D:\Project\MasteringIt\BusinessLogic\bin\Debug\DatabaseObject.pdb
+D:\Project\MasteringIt\BusinessLogic\bin\Debug\DatabaseObject.dll.config
+D:\Project\MasteringIt\BusinessLogic\bin\Debug\EntityFramework.xml
+D:\Project\MasteringIt\BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\MasteringIt\BusinessLogic\bin\Debug\CodeHelper.pdb
+D:\Project\MasteringIt\BusinessLogic\bin\Debug\CodeHelper.dll.config
+D:\Project\MasteringIt\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+D:\Project\MasteringIt\BusinessLogic\obj\Debug\BusinessLogic.dll
+D:\Project\MasteringIt\BusinessLogic\obj\Debug\BusinessLogic.pdb

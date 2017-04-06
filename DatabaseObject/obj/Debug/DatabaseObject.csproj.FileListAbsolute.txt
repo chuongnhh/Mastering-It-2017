@@ -11,3 +11,16 @@ D:\Project\New folder\MasteringIt\DatabaseObject\bin\Debug\EntityFramework.SqlSe
 D:\Project\New folder\MasteringIt\DatabaseObject\obj\Debug\DatabaseObject.csprojResolveAssemblyReference.cache
 D:\Project\New folder\MasteringIt\DatabaseObject\obj\Debug\DatabaseObject.dll
 D:\Project\New folder\MasteringIt\DatabaseObject\obj\Debug\DatabaseObject.pdb
+D:\Project\MasteringIt\DatabaseObject\bin\Debug\DatabaseObject.dll.config
+D:\Project\MasteringIt\DatabaseObject\bin\Debug\DatabaseObject.dll
+D:\Project\MasteringIt\DatabaseObject\bin\Debug\DatabaseObject.pdb
+D:\Project\MasteringIt\DatabaseObject\bin\Debug\CodeHelper.dll
+D:\Project\MasteringIt\DatabaseObject\bin\Debug\EntityFramework.dll
+D:\Project\MasteringIt\DatabaseObject\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\MasteringIt\DatabaseObject\bin\Debug\CodeHelper.pdb
+D:\Project\MasteringIt\DatabaseObject\bin\Debug\CodeHelper.dll.config
+D:\Project\MasteringIt\DatabaseObject\bin\Debug\EntityFramework.xml
+D:\Project\MasteringIt\DatabaseObject\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\MasteringIt\DatabaseObject\obj\Debug\DatabaseObject.csprojResolveAssemblyReference.cache
+D:\Project\MasteringIt\DatabaseObject\obj\Debug\DatabaseObject.dll
+D:\Project\MasteringIt\DatabaseObject\obj\Debug\DatabaseObject.pdb

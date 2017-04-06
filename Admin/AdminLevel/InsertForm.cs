@@ -31,6 +31,7 @@ namespace Admin.AdminLevel
             Level level = new Level();
             level.LevelName = txtLevelName.Text.Trim();
             blLevel.Insert(level);
+            this.Close();
         }
     }
 }

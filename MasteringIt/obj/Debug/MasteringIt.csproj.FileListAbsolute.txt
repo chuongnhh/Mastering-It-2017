@@ -23,3 +23,28 @@ D:\Project\New folder\MasteringIt\MasteringIt\bin\Debug\CodeHelper.dll.config
 D:\Project\New folder\MasteringIt\MasteringIt\bin\Debug\DatabaseAccess.dll
 D:\Project\New folder\MasteringIt\MasteringIt\bin\Debug\DatabaseAccess.pdb
 D:\Project\New folder\MasteringIt\MasteringIt\bin\Debug\DatabaseAccess.dll.config
+D:\Project\MasteringIt\MasteringIt\bin\Debug\MasteringIt.exe.config
+D:\Project\MasteringIt\MasteringIt\bin\Debug\MasteringIt.exe
+D:\Project\MasteringIt\MasteringIt\bin\Debug\MasteringIt.pdb
+D:\Project\MasteringIt\MasteringIt\bin\Debug\BusinessLogic.dll
+D:\Project\MasteringIt\MasteringIt\bin\Debug\DatabaseObject.dll
+D:\Project\MasteringIt\MasteringIt\bin\Debug\EntityFramework.dll
+D:\Project\MasteringIt\MasteringIt\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\MasteringIt\MasteringIt\bin\Debug\DatabaseAccess.dll
+D:\Project\MasteringIt\MasteringIt\bin\Debug\CodeHelper.dll
+D:\Project\MasteringIt\MasteringIt\bin\Debug\BusinessLogic.pdb
+D:\Project\MasteringIt\MasteringIt\bin\Debug\BusinessLogic.dll.config
+D:\Project\MasteringIt\MasteringIt\bin\Debug\DatabaseObject.pdb
+D:\Project\MasteringIt\MasteringIt\bin\Debug\DatabaseObject.dll.config
+D:\Project\MasteringIt\MasteringIt\bin\Debug\EntityFramework.xml
+D:\Project\MasteringIt\MasteringIt\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\MasteringIt\MasteringIt\bin\Debug\DatabaseAccess.pdb
+D:\Project\MasteringIt\MasteringIt\bin\Debug\DatabaseAccess.dll.config
+D:\Project\MasteringIt\MasteringIt\bin\Debug\CodeHelper.pdb
+D:\Project\MasteringIt\MasteringIt\bin\Debug\CodeHelper.dll.config
+D:\Project\MasteringIt\MasteringIt\obj\Debug\MasteringIt.csprojResolveAssemblyReference.cache
+D:\Project\MasteringIt\MasteringIt\obj\Debug\MasteringIt.MainForm.resources
+D:\Project\MasteringIt\MasteringIt\obj\Debug\MasteringIt.Properties.Resources.resources
+D:\Project\MasteringIt\MasteringIt\obj\Debug\MasteringIt.csproj.GenerateResource.Cache
+D:\Project\MasteringIt\MasteringIt\obj\Debug\MasteringIt.exe
+D:\Project\MasteringIt\MasteringIt\obj\Debug\MasteringIt.pdb

@@ -21,7 +21,7 @@ namespace BusinessLogic
         public void Update(Answer a)
         {
             var answer = db.Answers.Find(a.Id);
-            answer.AnswerLeter = a.AnswerLeter;
+            answer.AnswerLabel = a.AnswerLabel;
             answer.AnswerName = a.AnswerName;
             answer.IsTrue = a.IsTrue;
             answer.QuestionId = a.QuestionId;
@@ -39,6 +39,11 @@ namespace BusinessLogic
         public List<Answer> GetAll()
         {
             return db.Answers.ToList<Answer>();
+        }
+
+        public List<Answer> GetAll(Guid questionId)
+        {
+            return db.Answers.Where(x=>x.QuestionId== questionId).ToList<Answer>();
         }
 
         public Answer Get(Guid Id)
