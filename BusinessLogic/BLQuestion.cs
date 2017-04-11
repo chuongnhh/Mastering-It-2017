@@ -43,5 +43,10 @@ namespace BusinessLogic
         {
             return db.Questions.Find(Id);
         }
+
+        public List<Question> GetByGame(Guid gameId)
+        {
+            return db.Games.Find(gameId).Questions.ToList<Question>();
+        }
     }
 }

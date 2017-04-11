@@ -28,3 +28,5 @@ D:\Project\MasteringIt\WpfMasteringIt\bin\Debug\CodeHelper.pdb
 D:\Project\MasteringIt\WpfMasteringIt\bin\Debug\CodeHelper.dll.config
 D:\Project\MasteringIt\WpfMasteringIt\bin\Debug\EntityFramework.SqlServer.dll
 D:\Project\MasteringIt\WpfMasteringIt\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\MasteringIt\WpfMasteringIt\obj\Debug\frmSummaryScore.g.cs
+D:\Project\MasteringIt\WpfMasteringIt\obj\Debug\frmSummaryScore.baml

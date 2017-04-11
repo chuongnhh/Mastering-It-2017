@@ -16,6 +16,7 @@ namespace DatabaseObject.Entities
         {
             Id = GuidComb.GenerateComb();
             Members = new List<Member>();
+            Scores = new List<Score>();
         }
         [Key]
         public Guid Id { get; set; }
@@ -26,5 +27,7 @@ namespace DatabaseObject.Entities
         [ForeignKey("Level")]
         public Guid LevelId { get; set; }
         public virtual Level Level { get; set; }
+
+        public ICollection<Score> Scores { get; set; }
     }
 }

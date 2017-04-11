@@ -61,6 +61,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="frmSummaryScore.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -68,6 +72,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmSummaryScore.xaml.cs">
+      <DependentUpon>frmSummaryScore.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -114,24 +121,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="lgoUTE.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="logoNTT1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="lgoIT1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="lgoUTE1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="logoNTT2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="lgoIT2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="lgoUTE2.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">

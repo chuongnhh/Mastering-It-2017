@@ -17,3 +17,4 @@ D:\Project\MasteringIt\CodeHelper\bin\Debug\EntityFramework.xml
 D:\Project\MasteringIt\CodeHelper\bin\Debug\EntityFramework.SqlServer.xml
 D:\Project\MasteringIt\CodeHelper\obj\Debug\CodeHelper.dll
 D:\Project\MasteringIt\CodeHelper\obj\Debug\CodeHelper.pdb
+D:\Project\MasteringIt\CodeHelper\obj\Debug\CodeHelper.csprojResolveAssemblyReference.cache

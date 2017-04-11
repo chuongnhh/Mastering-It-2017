@@ -338,7 +338,7 @@
         </Grid>
 
         <Grid x:Name="gridLogoNTT" Height="30" Margin="0" VerticalAlignment="Bottom" Background="White">
-            <Image x:Name="imaLogoNTT" Height="30" VerticalAlignment="Center" Source="logoNTT2.jpg" HorizontalAlignment="Center" Margin="0"/>
+            <Image x:Name="imaLogoNTT" Height="30" VerticalAlignment="Center" Source="logoNTT.jpg" HorizontalAlignment="Center" Margin="0"/>
         </Grid>
         <Grid x:Name="gridTitle" Height="131" Margin="0,35,0,0" VerticalAlignment="Top">
             <Grid.Background>
@@ -350,8 +350,8 @@
                 </LinearGradientBrush>
             </Grid.Background>
             <Grid x:Name="gridLogo" HorizontalAlignment="Left" Margin="40,10,0,0" VerticalAlignment="Top">
-                <Image x:Name="logoIT" HorizontalAlignment="Left" Margin="70,0,0,0" Width="50" Source="lgoIT2.jpg" Stretch="Fill" VerticalAlignment="Top" Height="50"/>
-                <Image x:Name="logoUTE" Margin="0" Source="lgoUTE2.jpg" Stretch="Fill" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"/>
+                <Image x:Name="logoIT" HorizontalAlignment="Left" Margin="70,0,0,0" Width="50" Source="lgoIT.jpg" Stretch="Fill" VerticalAlignment="Top" Height="50"/>
+                <Image x:Name="logoUTE" Margin="0" Source="lgoUTE.jpg" Stretch="Fill" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"/>
             </Grid>
 
             <Grid x:Name="gridTextTitle" Margin="190,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
@@ -388,23 +388,23 @@
                 <Button x:Name="btnPlusScoreDoiSo1" Content="Button" HorizontalAlignment="Left" Height="40" Margin="246,0,-0.5,0" Style="{DynamicResource btnPlusScoreDoiSo1}" VerticalAlignment="Top" Width="23" BorderThickness="0" FontFamily="Calibri" Cursor="Hand"/>
                 <Button x:Name="btnMinusScoreDoiSo1" Content="Button" Height="40" Margin="0,0,89.324,0" Style="{DynamicResource btnMinusScoreDoiSo1}" VerticalAlignment="Top" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" HorizontalAlignment="Right" Width="23" Background="#FFF0F0F0"/>
                 <Label x:Name="lblDoiSo2" Content="" Margin="0,50,113.324,0" Background="#FFE6E6E6" Foreground="Black" VerticalContentAlignment="Center" Padding="0" FontSize="14" FontFamily="Calibri" HorizontalContentAlignment="Center" Height="40" VerticalAlignment="Top" d:LayoutOverrides="Height" FontWeight="Bold"/>
-                <TextBox x:Name="txtScoreDoiSo2" Margin="178.5,50,0,0" TextWrapping="Wrap" BorderThickness="0" FontSize="22" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Calibri" FontWeight="Bold" Width="67.5" HorizontalAlignment="Left" MaxLength="4" Height="40" VerticalAlignment="Top" Background="White"/>
+                <TextBox x:Name="txtScoreDoiSo2" Margin="178.5,50,0,0" TextWrapping="Wrap" BorderThickness="0" FontSize="22" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Calibri" FontWeight="Bold" Width="67.5" HorizontalAlignment="Left" MaxLength="4" Height="40" VerticalAlignment="Top" Background="White" KeyDown="txtScoreDoiSo2_KeyDown" TextChanged="txtScoreDoiSo2_TextChanged"/>
                 <Button x:Name="btnPlusScoreDoiSo2" Content="Button" HorizontalAlignment="Left" Margin="246,50,-0.5,0" Style="{DynamicResource btnPlusScoreDoiSo1}" Width="23" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" Height="40" VerticalAlignment="Top" Background="#FFF0F0F0"/>
                 <Button x:Name="btnMinusScoreDoiSo2" Content="Button" Margin="0,50,89.324,0" Style="{DynamicResource btnMinusScoreDoiSo1}" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" Height="40" VerticalAlignment="Top" HorizontalAlignment="Right" Width="23" Background="#FFF0F0F0"/>
                 <Label x:Name="lblDoiSo3" Content="" Margin="0,100,113.324,100" Background="#FFE6E6E6" Foreground="Black" VerticalContentAlignment="Center" Padding="0" FontSize="14" FontFamily="Calibri" HorizontalContentAlignment="Center" FontWeight="Bold"/>
-                <TextBox x:Name="txtScoreDoiSo3" Margin="178.5,100,0,0" TextWrapping="Wrap" BorderThickness="0" FontSize="22" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="40" VerticalAlignment="Top" FontFamily="Calibri" FontWeight="Bold" Width="67.5" HorizontalAlignment="Left" MaxLength="4" Background="White"/>
+                <TextBox x:Name="txtScoreDoiSo3" Margin="178.5,100,0,0" TextWrapping="Wrap" BorderThickness="0" FontSize="22" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="40" VerticalAlignment="Top" FontFamily="Calibri" FontWeight="Bold" Width="67.5" HorizontalAlignment="Left" MaxLength="4" Background="White" TextChanged="txtScoreDoiSo3_TextChanged" KeyDown="txtScoreDoiSo3_KeyDown"/>
                 <Button x:Name="btnPlusScoreDoiSo3" Content="Button" HorizontalAlignment="Left" Margin="246,100,-0.5,0" Style="{DynamicResource btnPlusScoreDoiSo1}" Width="23" BorderThickness="0" Height="40" VerticalAlignment="Top" FontFamily="Calibri" Cursor="Hand" Background="#FFF0F0F0"/>
                 <Button x:Name="btnMinusScoreDoiSo3" Content="Button" Margin="0,100,89.324,0" Style="{DynamicResource btnMinusScoreDoiSo1}" BorderThickness="0" Height="40" VerticalAlignment="Top" FontFamily="Calibri" Cursor="Hand" HorizontalAlignment="Right" Width="23" Background="#FFF0F0F0"/>
                 <Label x:Name="lblDoiSo4" Content="" Margin="0,150,113.324,0" Background="#FFE6E6E6" Height="40" VerticalAlignment="Top" Foreground="Black" VerticalContentAlignment="Center" Padding="0" FontSize="14" FontFamily="Calibri" HorizontalContentAlignment="Center" FontWeight="Bold"/>
-                <TextBox x:Name="txtScoreDoiSo4" Margin="178.5,150,0,0" TextWrapping="Wrap" BorderThickness="0" FontSize="22" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="40" VerticalAlignment="Top" FontFamily="Calibri" FontWeight="Bold" Width="67.5" HorizontalAlignment="Left" MaxLength="4" Background="White"/>
+                <TextBox x:Name="txtScoreDoiSo4" Margin="178.5,150,0,0" TextWrapping="Wrap" BorderThickness="0" FontSize="22" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="40" VerticalAlignment="Top" FontFamily="Calibri" FontWeight="Bold" Width="67.5" HorizontalAlignment="Left" MaxLength="4" Background="White" TextChanged="txtScoreDoiSo4_TextChanged" KeyDown="txtScoreDoiSo4_KeyDown"/>
                 <Button x:Name="btnPlusScoreDoiSo4" Content="Button" HorizontalAlignment="Left" Margin="246,150,-0.5,0" Style="{DynamicResource btnPlusScoreDoiSo1}" Width="23" BorderThickness="0" Height="40" VerticalAlignment="Top" FontFamily="Calibri" Cursor="Hand" Background="#FFF0F0F0"/>
                 <Button x:Name="btnMinusScoreDoiSo4" Content="Button" Margin="0,150,89.324,0" Style="{DynamicResource btnMinusScoreDoiSo1}" BorderThickness="0" Height="40" VerticalAlignment="Top" FontFamily="Calibri" Cursor="Hand" HorizontalAlignment="Right" Width="23" Background="#FFF0F0F0"/>
                 <Label x:Name="lblDoiSo5" Content="" Margin="0,200,113.324,0" Background="#FFE6E6E6" Height="40" VerticalAlignment="Top" Foreground="Black" Padding="0" VerticalContentAlignment="Center" FontSize="14" FontFamily="Calibri" HorizontalContentAlignment="Center" FontWeight="Bold"/>
-                <TextBox x:Name="txtScoreDoiSo5" Margin="178.5,200,0,0" TextWrapping="Wrap" BorderThickness="0" FontSize="22" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="40" VerticalAlignment="Top" FontFamily="Calibri" FontWeight="Bold" Width="67.5" HorizontalAlignment="Left" MaxLength="4" Background="White"/>
+                <TextBox x:Name="txtScoreDoiSo5" Margin="178.5,200,0,0" TextWrapping="Wrap" BorderThickness="0" FontSize="22" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="40" VerticalAlignment="Top" FontFamily="Calibri" FontWeight="Bold" Width="67.5" HorizontalAlignment="Left" MaxLength="4" Background="White" TextChanged="txtScoreDoiSo5_TextChanged" KeyDown="txtScoreDoiSo5_KeyDown"/>
                 <Button x:Name="btnPlusScoreDoiSo5" Content="Button" HorizontalAlignment="Left" Margin="246,200,-0.5,0" Style="{DynamicResource btnPlusScoreDoiSo1}" Width="23" BorderThickness="0" Height="40" VerticalAlignment="Top" FontFamily="Calibri" Cursor="Hand" Background="#FFF0F0F0"/>
                 <Button x:Name="btnMinusScoreDoiSo5" Content="Button" Margin="0,200,89.324,0" Style="{DynamicResource btnMinusScoreDoiSo1}" BorderThickness="0" Height="40" VerticalAlignment="Top" FontFamily="Calibri" Cursor="Hand" HorizontalAlignment="Right" Width="23" Background="#FFF0F0F0"/>
             </Grid>
-            <Button x:Name="btnSummary" Content="Button" Height="26" Margin="13,0,13,10" Style="{DynamicResource ButtonStyle}" VerticalAlignment="Bottom" Padding="0" FontWeight="Bold" Cursor="Hand" FontFamily="Calibri" FontSize="14"/>
+            <Button x:Name="btnSummary" Content="Button" Height="26" Margin="13,0,13,10" Style="{DynamicResource ButtonStyle}" VerticalAlignment="Bottom" Padding="0" FontWeight="Bold" Cursor="Hand" FontFamily="Calibri" FontSize="14" Click="btnSummary_Click"/>
             <ComboBox x:Name="cmbGame" Margin="13,58,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Height="26" Width="269" Cursor="Hand" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontFamily="Calibri" HorizontalAlignment="Left" SelectionChanged="cmbGame_SelectionChanged"/>
         </Grid>
         <Grid x:Name="gridGameMain" Margin="295.5,166,0,22" Background="White">
@@ -431,11 +431,11 @@
                 </UniformGrid>
             </StackPanel>
             <Grid x:Name="gridGameButton" Height="40" VerticalAlignment="Bottom">
-                <Button x:Name="btnAnswer" Content="Button" HorizontalAlignment="Right" Height="26" Margin="0,0,20,0" Style="{DynamicResource btnAnswer}" VerticalAlignment="Center" Width="100" Cursor="Hand" FontFamily="Calibri" FontSize="14" FontWeight="Bold"/>
-                <Button x:Name="btnPreviewQuestion" Content="Button" HorizontalAlignment="Left" Height="26" Margin="20,0,0,0" Style="{DynamicResource btnBackward}" VerticalAlignment="Center" Width="50" FontSize="22" FontWeight="Bold" FontFamily="Calibri" Cursor="Hand" HorizontalContentAlignment="Center"/>
-                <Button x:Name="btnNextQuestion" Content="Button" HorizontalAlignment="Left" Height="26" Margin="80,0,0,0" Style="{DynamicResource btnForward}" VerticalAlignment="Center" Width="50" FontFamily="Calibri" FontWeight="Bold" FontSize="22" Cursor="Hand"/>
+                <Button x:Name="btnAnswer" Content="Button" HorizontalAlignment="Right" Height="26" Margin="0,0,20,0" Style="{DynamicResource btnAnswer}" VerticalAlignment="Center" Width="100" Cursor="Hand" FontFamily="Calibri" FontSize="14" FontWeight="Bold" Click="btnAnswer_Click"/>
+                <Button x:Name="btnPreviewQuestion" Content="Button" HorizontalAlignment="Left" Height="26" Margin="20,0,0,0" Style="{DynamicResource btnBackward}" VerticalAlignment="Center" Width="50" FontSize="22" FontWeight="Bold" FontFamily="Calibri" Cursor="Hand" HorizontalContentAlignment="Center" Click="btnPreviewQuestion_Click"/>
+                <Button x:Name="btnNextQuestion" Content="Button" HorizontalAlignment="Left" Height="26" Margin="80,0,0,0" Style="{DynamicResource btnForward}" VerticalAlignment="Center" Width="50" FontFamily="Calibri" FontWeight="Bold" FontSize="22" Cursor="Hand" Click="btnNextQuestion_Click"/>
                 <Path x:Name="lineGame" Data="M24,364 L736.28084,364" Fill="#FFBDBDBD" Height="1" Margin="0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top"/>
-                <Button x:Name="btnStartTime" Content="Button" HorizontalAlignment="Left" Height="26" Margin="170,0,0,0" Style="{DynamicResource ButtonStyleStartTime}" VerticalAlignment="Center" Width="100" FontWeight="Bold" FontSize="14" FontFamily="Calibri" Cursor="Hand"/>
+                <Button x:Name="btnStartTime" Content="Button" HorizontalAlignment="Left" Height="26" Margin="170,0,0,0" Style="{DynamicResource ButtonStyleStartTime}" VerticalAlignment="Center" Width="100" FontWeight="Bold" FontSize="14" FontFamily="Calibri" Cursor="Hand" Click="btnStartTime_Click"/>
                 <Button x:Name="btnShowQuestion" Content="Button" HorizontalAlignment="Left" Height="26" Margin="280,0,0,0" Style="{DynamicResource ButtonStyleShowQuestion}" VerticalAlignment="Center" Width="100" BorderBrush="Black" FontSize="14" FontWeight="Bold" FontFamily="Calibri" Cursor="Hand"/>
             </Grid>
         </Grid>

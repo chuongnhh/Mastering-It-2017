@@ -52,5 +52,10 @@ namespace BusinessLogic
             return db.Scores.Where(x => x.TeamId == TeamId && x.LevelId == LevelId && x.GameId == GameId).FirstOrDefault<Score>();
         }
 
+        public List<Score> GetByTeam(Guid TeamId)
+        {
+            return db.Scores.Where(x => x.TeamId == TeamId).ToList();
+        }
+
     }
 }
