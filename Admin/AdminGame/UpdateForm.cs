@@ -33,6 +33,8 @@ namespace Admin.AdminGame
             txtGameName.Text = game.GameName;
             nudGameTime.Value = game.GameTime;
             txtId.Text = game.Id.ToString();
+            nudTeamNumber.Value = game.TeamNumber;
+
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -44,8 +46,8 @@ namespace Admin.AdminGame
             game.GameName = txtGameName.Text.Trim();
             game.GameTime = (int)nudGameTime.Value;
             game.LevelId = Guid.Parse(cboLevel.SelectedValue.ToString());
+            game.TeamNumber = (int)nudTeamNumber.Value;
             blGame.Update(game);
-
             this.Close();
         }
 

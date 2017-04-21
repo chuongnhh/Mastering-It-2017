@@ -66,3 +66,5 @@ D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminQuestion.UpdateForm.resources
 D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminAnswer.InsertForm.resources
 D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminAnswer.ListForm.resources
 D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminAnswer.UpdateForm.resources
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminGame.InsertQuestion.resources
+D:\Project\MasteringIt\Admin\obj\Debug\Admin.AdminGame.ListQuestion.resources

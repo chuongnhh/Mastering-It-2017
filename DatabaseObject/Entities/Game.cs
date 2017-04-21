@@ -20,6 +20,9 @@ namespace DatabaseObject.Entities
         public string GameName { get; set; }
         public int GameTime { get; set; }
 
+        // vong thi nay co bao nhieu doi tham gia (lay doi diem cao nhat)
+        public int TeamNumber { get; set; }
+
         [ForeignKey("Level")]
         public Guid LevelId { get; set; }
         public virtual Level Level { get; set; }

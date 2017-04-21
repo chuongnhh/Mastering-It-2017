@@ -32,13 +32,14 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.dgvTeamId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvTeamName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvTeamLevelId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvTeamLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvTeamMembers = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvCboTeamLevel = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.btnRefresh = new System.Windows.Forms.Button();
+            this.Scores = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,7 +89,8 @@
             this.dgvTeamLevelId,
             this.dgvTeamLevel,
             this.dgvTeamMembers,
-            this.dgvCboTeamLevel});
+            this.dgvCboTeamLevel,
+            this.Scores});
             this.dataGridView1.Location = new System.Drawing.Point(13, 42);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
@@ -98,6 +100,16 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(434, 224);
             this.dataGridView1.TabIndex = 1;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(256, 12);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
+            this.btnRefresh.TabIndex = 2;
+            this.btnRefresh.Text = "Cập nhật";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // dgvTeamId
             // 
@@ -145,15 +157,13 @@
             this.dgvCboTeamLevel.Name = "dgvCboTeamLevel";
             this.dgvCboTeamLevel.ReadOnly = true;
             // 
-            // btnRefresh
+            // Scores
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(256, 12);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
-            this.btnRefresh.TabIndex = 2;
-            this.btnRefresh.Text = "Cập nhật";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            this.Scores.DataPropertyName = "Scores";
+            this.Scores.HeaderText = "Scores";
+            this.Scores.Name = "Scores";
+            this.Scores.ReadOnly = true;
+            this.Scores.Visible = false;
             // 
             // ListForm
             // 
@@ -181,12 +191,13 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvTeamId;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvTeamName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvTeamLevelId;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvTeamLevel;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvTeamMembers;
         private System.Windows.Forms.DataGridViewComboBoxColumn dgvCboTeamLevel;
-        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Scores;
     }
 }

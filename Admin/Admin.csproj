@@ -76,11 +76,23 @@
     <Compile Include="AdminGame\InsertForm.Designer.cs">
       <DependentUpon>InsertForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminGame\InsertQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGame\InsertQuestion.Designer.cs">
+      <DependentUpon>InsertQuestion.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminGame\ListForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminGame\ListForm.Designer.cs">
       <DependentUpon>ListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGame\ListQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGame\ListQuestion.Designer.cs">
+      <DependentUpon>ListQuestion.cs</DependentUpon>
     </Compile>
     <Compile Include="AdminGame\UpdateForm.cs">
       <SubType>Form</SubType>
@@ -180,8 +192,14 @@
     <EmbeddedResource Include="AdminGame\InsertForm.resx">
       <DependentUpon>InsertForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminGame\InsertQuestion.resx">
+      <DependentUpon>InsertQuestion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminGame\ListForm.resx">
       <DependentUpon>ListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGame\ListQuestion.resx">
+      <DependentUpon>ListQuestion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminGame\UpdateForm.resx">
       <DependentUpon>UpdateForm.cs</DependentUpon>

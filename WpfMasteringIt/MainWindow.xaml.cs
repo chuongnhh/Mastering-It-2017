@@ -79,14 +79,14 @@ namespace WpfMasteringIt
             try
             {
                 Guid LevelId = Guid.Parse(cmbLevel.SelectedValue.ToString());
-
                 // Tro Choi
                 cmbGame.ItemsSource = (new BLGame()).GetByLevel(LevelId);
                 cmbGame.DisplayMemberPath = "GameName";
                 cmbGame.SelectedValuePath = "Id";
                 cmbGame.SelectedIndex = 0;
 
-                List<Team> lstTeam = (new BLTeam()).GetByLevel(LevelId);
+                Guid gameId = Guid.Parse(cmbGame.SelectedValue.ToString());
+                List<Team> lstTeam = (new BLTeam()).GetByLevel(LevelId, gameId);
 
                 // cap nhap ten doi len form
                 try
@@ -201,6 +201,111 @@ namespace WpfMasteringIt
             try
             {
                 Guid gameId = Guid.Parse(cmbGame.SelectedValue.ToString());
+                Guid LevelId = Guid.Parse(cmbLevel.SelectedValue.ToString());
+                // cap nhat team
+                List<Team> lstTeam = (new BLTeam()).GetByLevel(LevelId, gameId);
+
+                // cap nhap ten doi len form
+                try
+                {
+                    lblDoiSo1.Content = lstTeam[0].TeamName;
+                    lblDoiSo1.Tag = lstTeam[0].Id;
+
+                    lblDoiSo1.Visibility = Visibility.Visible;
+                    btnPlusScoreDoiSo1.Visibility = Visibility.Visible;
+                    btnMinusScoreDoiSo1.Visibility = Visibility.Visible;
+                    txtScoreDoiSo1.Visibility = Visibility.Visible;
+                }
+                catch (Exception)
+                {
+                    lblDoiSo1.Content = "";
+
+                    lblDoiSo1.Visibility = Visibility.Hidden;
+                    btnPlusScoreDoiSo1.Visibility = Visibility.Hidden;
+                    btnMinusScoreDoiSo1.Visibility = Visibility.Hidden;
+                    txtScoreDoiSo1.Visibility = Visibility.Hidden;
+                }
+                ///////////////////////////
+                try
+                {
+                    lblDoiSo2.Content = lstTeam[1].TeamName;
+                    lblDoiSo2.Tag = lstTeam[1].Id;
+
+                    lblDoiSo2.Visibility = Visibility.Visible;
+                    btnPlusScoreDoiSo2.Visibility = Visibility.Visible;
+                    btnMinusScoreDoiSo2.Visibility = Visibility.Visible;
+                    txtScoreDoiSo2.Visibility = Visibility.Visible;
+                }
+                catch (Exception)
+                {
+                    lblDoiSo2.Content = "";
+
+                    lblDoiSo2.Visibility = Visibility.Hidden;
+                    btnPlusScoreDoiSo2.Visibility = Visibility.Hidden;
+                    btnMinusScoreDoiSo2.Visibility = Visibility.Hidden;
+                    txtScoreDoiSo2.Visibility = Visibility.Hidden;
+                }
+                ///////////////////////////
+                try
+                {
+                    lblDoiSo3.Content = lstTeam[2].TeamName;
+                    lblDoiSo3.Tag = lstTeam[2].Id;
+
+                    lblDoiSo3.Visibility = Visibility.Visible;
+                    btnPlusScoreDoiSo3.Visibility = Visibility.Visible;
+                    btnMinusScoreDoiSo3.Visibility = Visibility.Visible;
+                    txtScoreDoiSo3.Visibility = Visibility.Visible;
+                }
+                catch (Exception)
+                {
+                    lblDoiSo3.Content = "";
+
+                    lblDoiSo3.Visibility = Visibility.Hidden;
+                    btnPlusScoreDoiSo3.Visibility = Visibility.Hidden;
+                    btnMinusScoreDoiSo3.Visibility = Visibility.Hidden;
+                    txtScoreDoiSo3.Visibility = Visibility.Hidden;
+                }
+                ///////////////////////////
+                try
+                {
+                    lblDoiSo4.Content = lstTeam[3].TeamName;
+                    lblDoiSo4.Tag = lstTeam[3].Id;
+
+                    lblDoiSo4.Visibility = Visibility.Visible;
+                    btnPlusScoreDoiSo4.Visibility = Visibility.Visible;
+                    btnMinusScoreDoiSo4.Visibility = Visibility.Visible;
+                    txtScoreDoiSo4.Visibility = Visibility.Visible;
+                }
+                catch (Exception)
+                {
+                    lblDoiSo4.Content = "";
+
+                    lblDoiSo4.Visibility = Visibility.Hidden;
+                    btnPlusScoreDoiSo4.Visibility = Visibility.Hidden;
+                    btnMinusScoreDoiSo4.Visibility = Visibility.Hidden;
+                    txtScoreDoiSo4.Visibility = Visibility.Hidden;
+                }
+                ///////////////////////////
+                try
+                {
+                    lblDoiSo5.Content = lstTeam[4].TeamName;
+                    lblDoiSo5.Tag = lstTeam[4].Id;
+
+                    lblDoiSo5.Visibility = Visibility.Visible;
+                    btnPlusScoreDoiSo5.Visibility = Visibility.Visible;
+                    btnMinusScoreDoiSo5.Visibility = Visibility.Visible;
+                    txtScoreDoiSo5.Visibility = Visibility.Visible;
+                }
+                catch (Exception)
+                {
+                    lblDoiSo5.Content = "";
+
+                    lblDoiSo5.Visibility = Visibility.Hidden;
+                    btnPlusScoreDoiSo5.Visibility = Visibility.Hidden;
+                    btnMinusScoreDoiSo5.Visibility = Visibility.Hidden;
+                    txtScoreDoiSo5.Visibility = Visibility.Hidden;
+                }
+                // end capnhat team
                 ResetQuestionContent(gameId);
 
                 // laays thoi gian
@@ -307,7 +412,7 @@ namespace WpfMasteringIt
                 // so cau hoi
                 int maxquestion = lstQuestion.Count();
 
-                if (indexquestion < maxquestion)
+                if (indexquestion < maxquestion-1)
                 {
                     indexQuestion(++indexquestion);
 
@@ -335,19 +440,19 @@ namespace WpfMasteringIt
             }
             catch (Exception)
             {
-                txbTenCauHoi.Text = "";
-                txbNoiDungCauHoi.Text = "";
-                txbLuaChonA.Text = "";
-                txbLuaChonB.Text = "";
-                txbLuaChonC.Text = "";
-                txbLuaChonD.Text = "";
-                txbA.Text = "";
-                txbB.Text = "";
-                txbC.Text = "";
-                txbD.Text = "";
-                txbTime.Text = "</>";
-                btnShowQuestion.IsEnabled = false;
-                btnStartTime.IsEnabled = false;
+                //txbTenCauHoi.Text = "";
+                //txbNoiDungCauHoi.Text = "";
+                //txbLuaChonA.Text = "";
+                //txbLuaChonB.Text = "";
+                //txbLuaChonC.Text = "";
+                //txbLuaChonD.Text = "";
+                //txbA.Text = "";
+                //txbB.Text = "";
+                //txbC.Text = "";
+                //txbD.Text = "";
+                //txbTime.Text = "</>";
+                //btnShowQuestion.IsEnabled = false;
+                //btnStartTime.IsEnabled = false;
             }
         }
 
@@ -357,7 +462,7 @@ namespace WpfMasteringIt
             {
                 int maxquestion = lstQuestion.Count();
 
-                if (indexquestion > 0)
+                if (indexquestion >= 0)
                 {
                     indexQuestion(--indexquestion);
                     prgTime.Maximum = timeMax;
@@ -378,7 +483,7 @@ namespace WpfMasteringIt
             }
             catch (Exception)
             {
-
+              
             }
         }
 
@@ -465,38 +570,83 @@ namespace WpfMasteringIt
                 txbTenCauHoi.Text = lstQuestion[index].QuestionLabel;
                 txbNoiDungCauHoi.Text = lstQuestion[index].QuestionName;
 
-                txbLuaChonA.Text = lstQuestion[index].Answers[0].AnswerName;
-                txbLuaChonB.Text = lstQuestion[index].Answers[1].AnswerName;
-                txbLuaChonC.Text = lstQuestion[index].Answers[2].AnswerName;
-                txbLuaChonD.Text = lstQuestion[index].Answers[3].AnswerName;
+                if (lstQuestion[index].QuestionName.Count() > 200)
+                {
+                    txbNoiDungCauHoi.FontSize = 30;
+                }
+                else
+                {
+                    txbNoiDungCauHoi.FontSize = 48;
+                }
+                if (lstQuestion[index].Answers.Count() > 1)
+                {
+                 
+                    txbLuaChonA.Text = lstQuestion[index].Answers[0].AnswerName;
+                    txbA.Text = lstQuestion[index].Answers[0].AnswerLabel;
 
-                txbLuaChonA.Foreground = (Brush)(new BrushConverter()).ConvertFrom("#FF000000");
-                txbA.Foreground = (Brush)(new BrushConverter()).ConvertFrom("#FF000000");
+                    txbLuaChonB.Text = lstQuestion[index].Answers[1].AnswerName;
+                    txbB.Text = lstQuestion[index].Answers[1].AnswerLabel;
 
-                txbLuaChonB.Foreground = (Brush)(new BrushConverter()).ConvertFrom("#FF000000");
-                txbB.Foreground = (Brush)(new BrushConverter()).ConvertFrom("#FF000000");
+                    txbLuaChonC.Text = lstQuestion[index].Answers[2].AnswerName;
+                    txbC.Text = lstQuestion[index].Answers[2].AnswerLabel;
 
-                txbLuaChonC.Foreground = (Brush)(new BrushConverter()).ConvertFrom("#FF000000");
-                txbC.Foreground = (Brush)(new BrushConverter()).ConvertFrom("#FF000000");
+                    txbLuaChonD.Text = lstQuestion[index].Answers[3].AnswerName;
+                    txbD.Text = lstQuestion[index].Answers[3].AnswerLabel;
 
-                txbLuaChonD.Foreground = (Brush)(new BrushConverter()).ConvertFrom("#FF000000");
-                txbD.Foreground = (Brush)(new BrushConverter()).ConvertFrom("#FF000000");
+
+                    txbLuaChonA.Foreground = (Brush)(new BrushConverter()).ConvertFrom("#FF000000");
+                    txbA.Foreground = (Brush)(new BrushConverter()).ConvertFrom("#FF000000");
+
+                    txbLuaChonB.Foreground = (Brush)(new BrushConverter()).ConvertFrom("#FF000000");
+                    txbB.Foreground = (Brush)(new BrushConverter()).ConvertFrom("#FF000000");
+
+                    txbLuaChonC.Foreground = (Brush)(new BrushConverter()).ConvertFrom("#FF000000");
+                    txbC.Foreground = (Brush)(new BrushConverter()).ConvertFrom("#FF000000");
+
+                    txbLuaChonD.Foreground = (Brush)(new BrushConverter()).ConvertFrom("#FF000000");
+                    txbD.Foreground = (Brush)(new BrushConverter()).ConvertFrom("#FF000000");
+                }
+                else
+                {
+                    txbLuaChonA.Text = "";
+                    txbLuaChonB.Text = "";
+                    txbLuaChonC.Text = "";
+                    txbLuaChonD.Text = "";
+                    txbA.Text = "";
+                    txbB.Text = "";
+                    txbC.Text = "";
+                    txbD.Text = "";
+                }
             }
             catch (Exception)
             {
-                throw;
-                //MessageBox.Show(ex.Message);
+                txbTenCauHoi.Text = "";
+                txbNoiDungCauHoi.Text = "";
+                txbLuaChonA.Text = "";
+                txbLuaChonB.Text = "";
+                txbLuaChonC.Text = "";
+                txbLuaChonD.Text = "";
+                txbA.Text = "";
+                txbB.Text = "";
+                txbC.Text = "";
+                txbD.Text = "";
+                txbTime.Text = "</>";
+                btnShowQuestion.IsEnabled = false;
+                btnStartTime.IsEnabled = false;
             }
             finally
             {
                 if (txbLuaChonA.Text == "") txbA.Text = "";
-                else txbA.Text = "A. ";
+                //else txbA.Text = "A. ";
+
                 if (txbLuaChonB.Text == "") txbB.Text = "";
-                else txbB.Text = "B. ";
+                //else txbB.Text = "B. ";
+
                 if (txbLuaChonC.Text == "") txbC.Text = "";
-                else txbC.Text = "C. ";
+                //else txbC.Text = "C. ";
+
                 if (txbLuaChonD.Text == "") txbD.Text = "";
-                else txbD.Text = "D. ";
+                //else txbD.Text = "D. ";
             }
         }
 
@@ -542,7 +692,16 @@ namespace WpfMasteringIt
                     .Answers.Where(x => x.IsTrue == true)
                     .FirstOrDefault();
 
-                if (answer == null) return;
+                List<Answer> lst = lstQuestion[indexquestion].Answers.ToList();
+
+                if (lst.Count() == 1)
+                {
+                    txbA.Text = lst[0].AnswerName;
+                    txbA.Foreground = (Brush)(new BrushConverter()).ConvertFrom("#FFFF0000");
+                    //txbA.Foreground = (Brush)(new BrushConverter()).ConvertFrom("#FFFF0000");
+
+                    return;
+                };
 
                 if (answer.AnswerLabel == "A")
                 {
@@ -633,8 +792,6 @@ namespace WpfMasteringIt
             }
         }
 
-
-      
         private void txtScoreDoiSo1_TextChanged(object sender, TextChangedEventArgs e)
         {
             txtScoreDoiSo1.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FFFF0000"));
@@ -858,6 +1015,14 @@ namespace WpfMasteringIt
                 {
                     MessageBox.Show(ex.Message);
                 }
+            }
+        }
+
+        private void gridSystemControl_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                this.DragMove();
             }
         }
     }

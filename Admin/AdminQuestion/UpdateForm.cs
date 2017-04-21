@@ -44,6 +44,7 @@ namespace Admin.AdminQuestion
             var ques = (new BLQuestion()).Get(id);
             ques.GameId = Guid.Parse(cboGame.SelectedValue.ToString());
             ques.QuestionLabel = comboBox1.Text;
+            ques.QuestionName = txtQuestonName.Text;
 
             (new BLQuestion()).Update(ques);
             this.Close();

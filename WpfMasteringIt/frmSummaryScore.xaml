@@ -9,29 +9,28 @@
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="#FF094C64" Offset="0"/>
-            <GradientStop Color="#FF00AFCB" Offset="1"/>
-            <GradientStop Color="#FF1E8CB6" Offset="0.62"/>
+            <GradientStop Color="#FF047081" Offset="1"/>
         </LinearGradientBrush>
     </Window.Background>
     <Grid>
-        <StackPanel x:Name="stpMain" Margin="200,20,192,9">
-            <Grid Margin="10,0,0,0">
+        <StackPanel x:Name="stpMain" Margin="200,0" VerticalAlignment="Center">
+            <Grid Margin="0">
                 <TextBlock x:Name="txbDoiSo1" HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap" FontSize="90" FontFamily="Calibri" FontWeight="Bold" Foreground="White" VerticalAlignment="Bottom"/>
                 <TextBlock x:Name="txbDoi1" Margin="0" TextWrapping="Wrap" HorizontalAlignment="Right" FontSize="100" FontFamily="Calibri" FontWeight="Bold" VerticalAlignment="Bottom" Foreground="White"/>
             </Grid>
-            <Grid Margin="10,0,0,0">
+            <Grid Margin="0">
                 <TextBlock x:Name="txbDoiSo2" HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap" FontSize="90" FontFamily="Calibri" FontWeight="Bold" Foreground="White" VerticalAlignment="Bottom"/>
                 <TextBlock x:Name="txbDoi2" Margin="0" TextWrapping="Wrap" HorizontalAlignment="Right" FontSize="100" FontFamily="Calibri" FontWeight="Bold" VerticalAlignment="Bottom" Foreground="White"/>
             </Grid>
-            <Grid Margin="10,0,0,0">
+            <Grid Margin="0">
                 <TextBlock x:Name="txbDoiSo3" HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap" FontSize="90" FontFamily="Calibri" FontWeight="Bold" Foreground="White" VerticalAlignment="Bottom"/>
                 <TextBlock x:Name="txbDoi3" Margin="0" TextWrapping="Wrap" HorizontalAlignment="Right" FontFamily="Calibri" FontSize="100" FontWeight="Bold" VerticalAlignment="Bottom" Foreground="White"/>
             </Grid>
-            <Grid Margin="10,0,0,0">
+            <Grid Margin="0">
                 <TextBlock x:Name="txbDoiSo4" HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap" FontSize="90" FontFamily="Calibri" FontWeight="Bold" Foreground="White" VerticalAlignment="Bottom"/>
                 <TextBlock x:Name="txbDoi4" Margin="0" TextWrapping="Wrap" HorizontalAlignment="Right" FontFamily="Calibri" FontSize="100" FontWeight="Bold" VerticalAlignment="Bottom" Foreground="White"/>
             </Grid>
-            <Grid Margin="10,0,0,0">
+            <Grid Margin="0">
                 <TextBlock x:Name="txbDoiSo5" HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap" FontSize="90" FontFamily="Calibri" FontWeight="Bold" Foreground="White" VerticalAlignment="Bottom"/>
                 <TextBlock x:Name="txbDoi5" Margin="0" TextWrapping="Wrap" HorizontalAlignment="Right" FontFamily="Calibri" FontWeight="Bold" FontSize="100" VerticalAlignment="Bottom" Foreground="White"/>
             </Grid>

@@ -63,5 +63,14 @@ namespace Admin.AdminGame
         {
             bs.DataSource = (new BLGame()).GetAll();
         }
+
+        private void dataGridView1_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int rowIndex = dataGridView1.CurrentCell.RowIndex;
+            string x = dataGridView1.Rows[rowIndex].Cells["dgvGameId"].Value.ToString();
+            Guid id = Guid.Parse(x);
+
+            (new ListQuestion(id)).ShowDialog();
+        }
     }
 }

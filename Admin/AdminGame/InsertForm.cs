@@ -31,12 +31,13 @@ namespace Admin.AdminGame
             Guid levelId = Guid.Parse(cboLevel.SelectedValue.ToString());
             string gameName = txtGameName.Text.Trim();
             int gameTime = (int)nudGameTime.Value;
+            int teamNumber = (int)nudTeamNumber.Value;
 
             Game game = new Game
             {
                 GameName = gameName,
                 GameTime = gameTime,
-                LevelId = levelId
+                LevelId = levelId, TeamNumber = teamNumber
             };
             blGame.Insert(game);
             this.Close();

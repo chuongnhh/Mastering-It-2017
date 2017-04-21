@@ -38,7 +38,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
+            this.nudTeamNumber = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudGameTime)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudTeamNumber)).BeginInit();
             this.SuspendLayout();
             // 
             // cboLevel
@@ -58,11 +61,6 @@
             0,
             0,
             0});
-            this.nudGameTime.Minimum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
             this.nudGameTime.Name = "nudGameTime";
             this.nudGameTime.Size = new System.Drawing.Size(250, 22);
             this.nudGameTime.TabIndex = 11;
@@ -74,7 +72,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(190, 118);
+            this.btnUpdate.Location = new System.Drawing.Point(190, 156);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 9;
@@ -84,7 +82,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(271, 118);
+            this.btnClose.Location = new System.Drawing.Point(271, 156);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 10;
@@ -143,12 +141,45 @@
             this.txtId.Size = new System.Drawing.Size(250, 22);
             this.txtId.TabIndex = 8;
             // 
+            // nudTeamNumber
+            // 
+            this.nudTeamNumber.Location = new System.Drawing.Point(96, 120);
+            this.nudTeamNumber.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.nudTeamNumber.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.nudTeamNumber.Name = "nudTeamNumber";
+            this.nudTeamNumber.Size = new System.Drawing.Size(250, 22);
+            this.nudTeamNumber.TabIndex = 14;
+            this.nudTeamNumber.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(22, 122);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(43, 13);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Số đội:";
+            // 
             // UpdateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(358, 150);
+            this.ClientSize = new System.Drawing.Size(358, 189);
+            this.Controls.Add(this.nudTeamNumber);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.cboLevel);
             this.Controls.Add(this.nudGameTime);
             this.Controls.Add(this.btnUpdate);
@@ -168,6 +199,7 @@
             this.Text = "Cập nhật trò chơi";
             this.Load += new System.EventHandler(this.UpdateForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudGameTime)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudTeamNumber)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,5 +217,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.NumericUpDown nudTeamNumber;
+        private System.Windows.Forms.Label label5;
     }
 }

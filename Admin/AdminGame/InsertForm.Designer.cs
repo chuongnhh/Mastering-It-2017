@@ -36,7 +36,10 @@
             this.nudGameTime = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.cboLevel = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.nudTeamNumber = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.nudGameTime)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudTeamNumber)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -66,7 +69,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(262, 97);
+            this.btnClose.Location = new System.Drawing.Point(262, 129);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 2;
@@ -76,7 +79,7 @@
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(181, 97);
+            this.btnInsert.Location = new System.Drawing.Point(181, 129);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(75, 23);
             this.btnInsert.TabIndex = 2;
@@ -89,11 +92,6 @@
             this.nudGameTime.Location = new System.Drawing.Point(88, 71);
             this.nudGameTime.Maximum = new decimal(new int[] {
             500,
-            0,
-            0,
-            0});
-            this.nudGameTime.Minimum = new decimal(new int[] {
-            60,
             0,
             0,
             0});
@@ -124,15 +122,48 @@
             this.cboLevel.Size = new System.Drawing.Size(250, 21);
             this.cboLevel.TabIndex = 4;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 101);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(43, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Số đội:";
+            // 
+            // nudTeamNumber
+            // 
+            this.nudTeamNumber.Location = new System.Drawing.Point(87, 99);
+            this.nudTeamNumber.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.nudTeamNumber.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.nudTeamNumber.Name = "nudTeamNumber";
+            this.nudTeamNumber.Size = new System.Drawing.Size(250, 22);
+            this.nudTeamNumber.TabIndex = 3;
+            this.nudTeamNumber.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
             // InsertForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(349, 132);
+            this.ClientSize = new System.Drawing.Size(349, 164);
             this.Controls.Add(this.cboLevel);
+            this.Controls.Add(this.nudTeamNumber);
             this.Controls.Add(this.nudGameTime);
             this.Controls.Add(this.btnInsert);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
@@ -145,6 +176,7 @@
             this.Text = "Thêm trò chơi";
             this.Load += new System.EventHandler(this.InsertForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudGameTime)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudTeamNumber)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,5 +192,7 @@
         private System.Windows.Forms.NumericUpDown nudGameTime;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cboLevel;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.NumericUpDown nudTeamNumber;
     }
 }

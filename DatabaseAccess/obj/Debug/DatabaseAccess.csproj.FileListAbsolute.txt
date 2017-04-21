@@ -35,3 +35,4 @@ D:\Project\MasteringIt\DatabaseAccess\obj\Debug\DatabaseAccess.dll
 D:\Project\MasteringIt\DatabaseAccess\obj\Debug\DatabaseAccess.pdb
 D:\Project\MasteringIt\DatabaseAccess\obj\Debug\DatabaseAccess.Migrations.v1.resources
 D:\Project\MasteringIt\DatabaseAccess\obj\Debug\DatabaseAccess.csproj.GenerateResource.Cache
+D:\Project\MasteringIt\DatabaseAccess\obj\Debug\DatabaseAccess.Migrations.v2.resources

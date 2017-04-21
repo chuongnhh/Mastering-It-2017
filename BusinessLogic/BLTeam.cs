@@ -44,12 +44,21 @@ namespace BusinessLogic
             return db.Teams.Find(Id);
         }
 
-        public List<Team> GetByLevel(Guid LevelId)
+        public List<Team> GetByLevel(Guid LevelId, Guid gameId)
         {
-            return db.Teams
-                .Where(x=>x.LevelId==LevelId)
+            int teamNumber = db.Games.Find(gameId).TeamNumber;
+
+            return db.Teams.OrderByDescending(x => x.Scores.Max(z => z.ScoreNumber))
+                .Where(x => x.LevelId == LevelId).Take(teamNumber)
                 .ToList<Team>();
         }
 
+        public List<Team> GetByLevel(Guid LevelId)
+        {
+
+            return db.Teams
+                .Where(x => x.LevelId == LevelId)
+                .ToList<Team>();
+        }
     }
 }

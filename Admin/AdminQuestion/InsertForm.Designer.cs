@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.cboGame = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtQuestonName = new System.Windows.Forms.TextBox();
             this.btnInsert = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cboGame = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label2
@@ -47,24 +47,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Nhãn câu hỏi:";
             // 
-            // cboGame
-            // 
-            this.cboGame.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboGame.FormattingEnabled = true;
-            this.cboGame.Location = new System.Drawing.Point(99, 12);
-            this.cboGame.Name = "cboGame";
-            this.cboGame.Size = new System.Drawing.Size(241, 21);
-            this.cboGame.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Trò chơi:";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -74,11 +56,11 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Nội dung:";
             // 
-            // txtQuestonContent
+            // txtQuestonName
             // 
             this.txtQuestonName.Location = new System.Drawing.Point(99, 65);
             this.txtQuestonName.Multiline = true;
-            this.txtQuestonName.Name = "txtQuestonContent";
+            this.txtQuestonName.Name = "txtQuestonName";
             this.txtQuestonName.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtQuestonName.Size = new System.Drawing.Size(241, 137);
             this.txtQuestonName.TabIndex = 4;
@@ -116,6 +98,24 @@
             this.comboBox1.Size = new System.Drawing.Size(241, 21);
             this.comboBox1.TabIndex = 9;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Trò chơi:";
+            // 
+            // cboGame
+            // 
+            this.cboGame.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboGame.FormattingEnabled = true;
+            this.cboGame.Location = new System.Drawing.Point(99, 12);
+            this.cboGame.Name = "cboGame";
+            this.cboGame.Size = new System.Drawing.Size(241, 21);
+            this.cboGame.TabIndex = 6;
+            // 
             // InsertForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -142,12 +142,12 @@
 
         #endregion
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cboGame;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtQuestonName;
         private System.Windows.Forms.Button btnInsert;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cboGame;
     }
 }
