@@ -1,0 +1,10 @@
+D:\Project\MasteringIt\CodeHelper\bin\Release\CodeHelper.dll.config
+D:\Project\MasteringIt\CodeHelper\bin\Release\CodeHelper.dll
+D:\Project\MasteringIt\CodeHelper\bin\Release\CodeHelper.pdb
+D:\Project\MasteringIt\CodeHelper\bin\Release\EntityFramework.dll
+D:\Project\MasteringIt\CodeHelper\bin\Release\EntityFramework.SqlServer.dll
+D:\Project\MasteringIt\CodeHelper\bin\Release\EntityFramework.xml
+D:\Project\MasteringIt\CodeHelper\bin\Release\EntityFramework.SqlServer.xml
+D:\Project\MasteringIt\CodeHelper\obj\Release\CodeHelper.dll
+D:\Project\MasteringIt\CodeHelper\obj\Release\CodeHelper.pdb
+D:\Project\MasteringIt\CodeHelper\obj\Release\CodeHelper.csprojResolveAssemblyReference.cache

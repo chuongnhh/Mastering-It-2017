@@ -1065,17 +1065,20 @@ namespace WpfMasteringIt
                     dispatcherTimer.IsEnabled = false;
                     prgTime.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FFFF6335"));
                     txbTime.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FFFF6335"));
+                    sound.Stop();
                 }
                 else
                 {
                     dispatcherTimer.IsEnabled = true;
                     prgTime.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FF000000"));
                     txbTime.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FF000000"));
+                    sound.Play();
                 }
                 //btnAnswer_Click(null, null);
             }
             else if (e.Key == Key.R && (Keyboard.IsKeyDown(Key.LeftCtrl) || Keyboard.IsKeyDown(Key.RightCtrl)))
             {
+                sound.Stop();
                 dispatcherTimer.Stop();
                 prgTime.Maximum = timeMax;
                 prgTime.Value = timeCount = 0;
