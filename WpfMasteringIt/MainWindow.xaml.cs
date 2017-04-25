@@ -428,8 +428,8 @@ namespace WpfMasteringIt
                         btnShowQuestion.IsEnabled = true;
                     try
                     {
-                        SoundPlay("../../../Music/Next.wav");
-                        sound.Play();
+                        //SoundPlay("../../../Music/Next.wav");
+                        //sound.Play();
                         played = false;
                     }
                     catch (Exception)
@@ -475,8 +475,8 @@ namespace WpfMasteringIt
                     if (btnShowQuestion.IsEnabled == false)
                         btnShowQuestion.IsEnabled = true;
 
-                    SoundPlay("../../../Music/Next.wav");
-                    sound.Play();
+                    //SoundPlay("../../../Music/Next.wav");
+                    //sound.Play();
                     played = false;
                     seen = false;
                 }
@@ -763,7 +763,7 @@ namespace WpfMasteringIt
                 {
                     if (played == false && timeCount < timeMax)
                     {
-                        SoundPlay("../../../Music/BackGroundSound.wav");
+                        SoundPlay("mp3.wav");
                         sound.PlayLooping();
                     }
                 }
