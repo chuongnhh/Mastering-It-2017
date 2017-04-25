@@ -32,6 +32,7 @@ namespace WpfMasteringIt
         public MainWindow()
         {
             InitializeComponent();
+            btnShowQuestion.Visibility = Visibility.Hidden;
         }
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
@@ -412,7 +413,7 @@ namespace WpfMasteringIt
                 // so cau hoi
                 int maxquestion = lstQuestion.Count();
 
-                if (indexquestion < maxquestion-1)
+                if (indexquestion < maxquestion - 1)
                 {
                     indexQuestion(++indexquestion);
 
@@ -483,7 +484,7 @@ namespace WpfMasteringIt
             }
             catch (Exception)
             {
-              
+
             }
         }
 
@@ -580,7 +581,7 @@ namespace WpfMasteringIt
                 }
                 if (lstQuestion[index].Answers.Count() > 1)
                 {
-                 
+
                     txbLuaChonA.Text = lstQuestion[index].Answers[0].AnswerName;
                     txbA.Text = lstQuestion[index].Answers[0].AnswerLabel;
 
@@ -763,6 +764,8 @@ namespace WpfMasteringIt
                 {
                     if (played == false && timeCount < timeMax)
                     {
+                        prgTime.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FF000000"));
+                        txbTime.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FF000000"));
                         SoundPlay("mp3.wav");
                         sound.PlayLooping();
                     }
@@ -1023,6 +1026,70 @@ namespace WpfMasteringIt
             if (e.LeftButton == MouseButtonState.Pressed)
             {
                 this.DragMove();
+            }
+        }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.M && (Keyboard.IsKeyDown(Key.LeftCtrl) || Keyboard.IsKeyDown(Key.RightCtrl)))
+            {
+                if (this.WindowState == WindowState.Maximized)
+                {
+                    this.WindowState = WindowState.Minimized;
+                }
+                else this.WindowState = WindowState.Maximized;
+            }
+            else if (e.Key == Key.X && (Keyboard.IsKeyDown(Key.LeftCtrl) || Keyboard.IsKeyDown(Key.RightCtrl)))
+            {
+                this.Close();
+            }
+            else if (e.Key == Key.Left)
+            {
+                if (btnPreviewQuestion.IsEnabled == true)
+                    btnPreviewQuestion_Click(null, null);
+            }
+            else if (e.Key == Key.Right)
+            {
+                //if (btnNextQuestion.IsEnabled == true)
+                    btnNextQuestion_Click(null, null);
+            }
+            else if (e.Key == Key.Up)
+            {
+                if (btnStartTime.IsEnabled == true)
+                    btnStartTime_Click(null, null);
+            }
+            else if (e.Key == Key.P && (Keyboard.IsKeyDown(Key.LeftCtrl) || Keyboard.IsKeyDown(Key.RightCtrl)))
+            {
+                if (dispatcherTimer.IsEnabled == true)
+                {
+                    dispatcherTimer.IsEnabled = false;
+                    prgTime.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FFFF6335"));
+                    txbTime.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FFFF6335"));
+                }
+                else
+                {
+                    dispatcherTimer.IsEnabled = true;
+                    prgTime.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FF000000"));
+                    txbTime.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FF000000"));
+                }
+                //btnAnswer_Click(null, null);
+            }
+            else if (e.Key == Key.R && (Keyboard.IsKeyDown(Key.LeftCtrl) || Keyboard.IsKeyDown(Key.RightCtrl)))
+            {
+                dispatcherTimer.Stop();
+                prgTime.Maximum = timeMax;
+                prgTime.Value = timeCount = 0;
+                txbTime.Text = (TimeSpan.FromSeconds(timeMax)).ToString("mm':'ss");
+                played = false;
+                seen = false;
+                prgTime.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FF000000"));
+                txbTime.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FF000000"));
+                IsEnableControl(true);
+            }
+
+            else if (e.Key == Key.Down && (Keyboard.IsKeyDown(Key.LeftCtrl) || Keyboard.IsKeyDown(Key.RightCtrl)))
+            {
+                btnAnswer_Click(null, null);
             }
         }
     }

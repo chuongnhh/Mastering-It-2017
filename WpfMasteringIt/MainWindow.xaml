@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfMasteringIt"
         mc:Ignorable="d"
-        Title="Mastering It 2017" Height="700" Width="1200" WindowStartupLocation="CenterScreen" WindowState="Maximized" Icon="it.jpg" WindowStyle="None" Topmost="True" ResizeMode="NoResize" Loaded="Window_Loaded">
+        Title="Mastering It 2017" Height="700" Width="1200" WindowStartupLocation="CenterScreen" WindowState="Maximized" Icon="it.jpg" WindowStyle="None" Topmost="True" ResizeMode="NoResize" Loaded="Window_Loaded" KeyDown="Window_KeyDown">
     <Window.Resources>
         <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
             <Setter Property="Template">
@@ -351,7 +351,7 @@
             </Grid.Background>
             <Grid x:Name="gridLogo" HorizontalAlignment="Left" Margin="40,10,0,0" VerticalAlignment="Top">
                 <Image x:Name="logoIT" HorizontalAlignment="Left" Margin="70,0,0,0" Width="50" Source="lgoIT.jpg" Stretch="Fill" VerticalAlignment="Top" Height="50"/>
-                <Image x:Name="logoUTE" Margin="0" Source="lgoUTE.jpg" Stretch="Fill" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"/>
+                <Image x:Name="logoUTE" Margin="-28,0,0,0" Source="2.png" Stretch="Fill" VerticalAlignment="Top" HorizontalAlignment="Left" Width="150" Height="80"/>
             </Grid>
 
             <Grid x:Name="gridTextTitle" Margin="190,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
@@ -458,7 +458,7 @@
                 <Button x:Name="btnNextQuestion" Content="Button" HorizontalAlignment="Left" Height="26" Margin="80,0,0,0" Style="{DynamicResource btnForward}" VerticalAlignment="Center" Width="50" FontFamily="Calibri" FontWeight="Bold" FontSize="22" Cursor="Hand" Click="btnNextQuestion_Click"/>
                 <Path x:Name="lineGame" Data="M24,364 L736.28084,364" Fill="#FFBDBDBD" Height="1" Margin="0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top"/>
                 <Button x:Name="btnStartTime" Content="Button" HorizontalAlignment="Left" Height="26" Margin="170,0,0,0" Style="{DynamicResource ButtonStyleStartTime}" VerticalAlignment="Center" Width="100" FontWeight="Bold" FontSize="14" FontFamily="Calibri" Cursor="Hand" Click="btnStartTime_Click"/>
-                <Button x:Name="btnShowQuestion" Content="Button" HorizontalAlignment="Left" Height="26" Margin="280,0,0,0" Style="{DynamicResource ButtonStyleShowQuestion}" VerticalAlignment="Center" Width="100" BorderBrush="Black" FontSize="14" FontWeight="Bold" FontFamily="Calibri" Cursor="Hand"/>
+                <Button x:Name="btnShowQuestion" Content="Button" HorizontalAlignment="Left" Height="26" Margin="280,0,0,0" Style="{DynamicResource ButtonStyleShowQuestion}" VerticalAlignment="Center" Width="100" BorderBrush="Black" FontSize="14" FontWeight="Bold" FontFamily="Calibri" Cursor="Hand" d:IsHidden="True"/>
             </Grid>
         </Grid>
     </Grid>
