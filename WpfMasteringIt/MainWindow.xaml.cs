@@ -87,7 +87,7 @@ namespace WpfMasteringIt
                 cmbGame.SelectedIndex = 0;
 
                 Guid gameId = Guid.Parse(cmbGame.SelectedValue.ToString());
-                List<Team> lstTeam = (new BLTeam()).GetByLevel(LevelId, gameId);
+                List<Team> lstTeam = (new BLTeam()).GetByLevel(LevelId);
 
                 // cap nhap ten doi len form
                 try
@@ -204,7 +204,7 @@ namespace WpfMasteringIt
                 Guid gameId = Guid.Parse(cmbGame.SelectedValue.ToString());
                 Guid LevelId = Guid.Parse(cmbLevel.SelectedValue.ToString());
                 // cap nhat team
-                List<Team> lstTeam = (new BLTeam()).GetByLevel(LevelId, gameId);
+                List<Team> lstTeam = (new BLTeam()).GetByLevel(LevelId,gameId);
 
                 // cap nhap ten doi len form
                 try
@@ -1051,7 +1051,7 @@ namespace WpfMasteringIt
             else if (e.Key == Key.Right)
             {
                 //if (btnNextQuestion.IsEnabled == true)
-                    btnNextQuestion_Click(null, null);
+                btnNextQuestion_Click(null, null);
             }
             else if (e.Key == Key.Up)
             {
@@ -1093,6 +1093,406 @@ namespace WpfMasteringIt
             else if (e.Key == Key.Down && (Keyboard.IsKeyDown(Key.LeftCtrl) || Keyboard.IsKeyDown(Key.RightCtrl)))
             {
                 btnAnswer_Click(null, null);
+            }
+        }
+
+        private void btnPlusScoreDoiSo1_Click(object sender, RoutedEventArgs e)
+        {
+            int score = int.Parse(txtScoreDoiSo1.Text.Trim());
+            txtScoreDoiSo1.Text = (score + 10).ToString();
+
+            try
+            {
+                Guid levelId = (Guid)cmbLevel.SelectedValue;
+                Guid gameId = (Guid)cmbGame.SelectedValue;
+                Guid teamId = (Guid)lblDoiSo1.Tag;
+                int scoreNumber = int.Parse(txtScoreDoiSo1.Text.Trim());
+
+                if ((new BLScore().Get(teamId, levelId, gameId)) == null)
+                {
+                    (new BLScore()).Insert(new Score
+                    {
+                        LevelId = levelId,
+                        TeamId = teamId,
+                        GameId = gameId,
+                        ScoreNumber = scoreNumber
+                    });
+                }
+                else
+                {
+                    (new BLScore()).Update(new Score
+                    {
+                        LevelId = levelId,
+                        TeamId = teamId,
+                        GameId = gameId,
+                        ScoreNumber = scoreNumber
+                    });
+                }
+                txtScoreDoiSo1.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FF000000"));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnMinusScoreDoiSo1_Click(object sender, RoutedEventArgs e)
+        {
+            int score = int.Parse(txtScoreDoiSo1.Text.Trim());
+            txtScoreDoiSo1.Text = (score - 10).ToString();
+
+            try
+            {
+                Guid levelId = (Guid)cmbLevel.SelectedValue;
+                Guid gameId = (Guid)cmbGame.SelectedValue;
+                Guid teamId = (Guid)lblDoiSo1.Tag;
+                int scoreNumber = int.Parse(txtScoreDoiSo1.Text.Trim());
+
+                if ((new BLScore().Get(teamId, levelId, gameId)) == null)
+                {
+                    (new BLScore()).Insert(new Score
+                    {
+                        LevelId = levelId,
+                        TeamId = teamId,
+                        GameId = gameId,
+                        ScoreNumber = scoreNumber
+                    });
+                }
+                else
+                {
+                    (new BLScore()).Update(new Score
+                    {
+                        LevelId = levelId,
+                        TeamId = teamId,
+                        GameId = gameId,
+                        ScoreNumber = scoreNumber
+                    });
+                }
+                txtScoreDoiSo1.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FF000000"));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnPlusScoreDoiSo2_Click(object sender, RoutedEventArgs e)
+        {
+            int score = int.Parse(txtScoreDoiSo2.Text.Trim());
+            txtScoreDoiSo2.Text = (score + 10).ToString();
+
+            try
+            {
+                Guid levelId = (Guid)cmbLevel.SelectedValue;
+                Guid gameId = (Guid)cmbGame.SelectedValue;
+                Guid teamId = (Guid)lblDoiSo2.Tag;
+                int scoreNumber = int.Parse(txtScoreDoiSo2.Text.Trim());
+
+                if ((new BLScore().Get(teamId, levelId, gameId)) == null)
+                {
+                    (new BLScore()).Insert(new Score
+                    {
+                        LevelId = levelId,
+                        TeamId = teamId,
+                        GameId = gameId,
+                        ScoreNumber = scoreNumber
+                    });
+                }
+                else
+                {
+                    (new BLScore()).Update(new Score
+                    {
+                        LevelId = levelId,
+                        TeamId = teamId,
+                        GameId = gameId,
+                        ScoreNumber = scoreNumber
+                    });
+                }
+                txtScoreDoiSo2.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FF000000"));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnMinusScoreDoiSo2_Click(object sender, RoutedEventArgs e)
+        {
+            int score = int.Parse(txtScoreDoiSo2.Text.Trim());
+            txtScoreDoiSo2.Text = (score - 10).ToString();
+
+            try
+            {
+                Guid levelId = (Guid)cmbLevel.SelectedValue;
+                Guid gameId = (Guid)cmbGame.SelectedValue;
+                Guid teamId = (Guid)lblDoiSo2.Tag;
+                int scoreNumber = int.Parse(txtScoreDoiSo2.Text.Trim());
+
+                if ((new BLScore().Get(teamId, levelId, gameId)) == null)
+                {
+                    (new BLScore()).Insert(new Score
+                    {
+                        LevelId = levelId,
+                        TeamId = teamId,
+                        GameId = gameId,
+                        ScoreNumber = scoreNumber
+                    });
+                }
+                else
+                {
+                    (new BLScore()).Update(new Score
+                    {
+                        LevelId = levelId,
+                        TeamId = teamId,
+                        GameId = gameId,
+                        ScoreNumber = scoreNumber
+                    });
+                }
+                txtScoreDoiSo2.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FF000000"));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnPlusScoreDoiSo3_Click(object sender, RoutedEventArgs e)
+        {
+            int score = int.Parse(txtScoreDoiSo3.Text.Trim());
+            txtScoreDoiSo3.Text = (score + 10).ToString();
+
+            try
+            {
+                Guid levelId = (Guid)cmbLevel.SelectedValue;
+                Guid gameId = (Guid)cmbGame.SelectedValue;
+                Guid teamId = (Guid)lblDoiSo3.Tag;
+                int scoreNumber = int.Parse(txtScoreDoiSo3.Text.Trim());
+
+                if ((new BLScore().Get(teamId, levelId, gameId)) == null)
+                {
+                    (new BLScore()).Insert(new Score
+                    {
+                        LevelId = levelId,
+                        TeamId = teamId,
+                        GameId = gameId,
+                        ScoreNumber = scoreNumber
+                    });
+                }
+                else
+                {
+                    (new BLScore()).Update(new Score
+                    {
+                        LevelId = levelId,
+                        TeamId = teamId,
+                        GameId = gameId,
+                        ScoreNumber = scoreNumber
+                    });
+                }
+                txtScoreDoiSo3.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FF000000"));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnMinusScoreDoiSo3_Click(object sender, RoutedEventArgs e)
+        {
+            int score = int.Parse(txtScoreDoiSo3.Text.Trim());
+            txtScoreDoiSo3.Text = (score - 10).ToString();
+
+            try
+            {
+                Guid levelId = (Guid)cmbLevel.SelectedValue;
+                Guid gameId = (Guid)cmbGame.SelectedValue;
+                Guid teamId = (Guid)lblDoiSo3.Tag;
+                int scoreNumber = int.Parse(txtScoreDoiSo3.Text.Trim());
+
+                if ((new BLScore().Get(teamId, levelId, gameId)) == null)
+                {
+                    (new BLScore()).Insert(new Score
+                    {
+                        LevelId = levelId,
+                        TeamId = teamId,
+                        GameId = gameId,
+                        ScoreNumber = scoreNumber
+                    });
+                }
+                else
+                {
+                    (new BLScore()).Update(new Score
+                    {
+                        LevelId = levelId,
+                        TeamId = teamId,
+                        GameId = gameId,
+                        ScoreNumber = scoreNumber
+                    });
+                }
+                txtScoreDoiSo3.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FF000000"));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnPlusScoreDoiSo4_Click(object sender, RoutedEventArgs e)
+        {
+            int score = int.Parse(txtScoreDoiSo4.Text.Trim());
+            txtScoreDoiSo4.Text = (score + 10).ToString();
+
+            try
+            {
+                Guid levelId = (Guid)cmbLevel.SelectedValue;
+                Guid gameId = (Guid)cmbGame.SelectedValue;
+                Guid teamId = (Guid)lblDoiSo4.Tag;
+                int scoreNumber = int.Parse(txtScoreDoiSo4.Text.Trim());
+
+                if ((new BLScore().Get(teamId, levelId, gameId)) == null)
+                {
+                    (new BLScore()).Insert(new Score
+                    {
+                        LevelId = levelId,
+                        TeamId = teamId,
+                        GameId = gameId,
+                        ScoreNumber = scoreNumber
+                    });
+                }
+                else
+                {
+                    (new BLScore()).Update(new Score
+                    {
+                        LevelId = levelId,
+                        TeamId = teamId,
+                        GameId = gameId,
+                        ScoreNumber = scoreNumber
+                    });
+                }
+                txtScoreDoiSo4.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FF000000"));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnMinusScoreDoiSo4_Click(object sender, RoutedEventArgs e)
+        {
+            int score = int.Parse(txtScoreDoiSo4.Text.Trim());
+            txtScoreDoiSo4.Text = (score - 10).ToString();
+
+            try
+            {
+                Guid levelId = (Guid)cmbLevel.SelectedValue;
+                Guid gameId = (Guid)cmbGame.SelectedValue;
+                Guid teamId = (Guid)lblDoiSo4.Tag;
+                int scoreNumber = int.Parse(txtScoreDoiSo4.Text.Trim());
+
+                if ((new BLScore().Get(teamId, levelId, gameId)) == null)
+                {
+                    (new BLScore()).Insert(new Score
+                    {
+                        LevelId = levelId,
+                        TeamId = teamId,
+                        GameId = gameId,
+                        ScoreNumber = scoreNumber
+                    });
+                }
+                else
+                {
+                    (new BLScore()).Update(new Score
+                    {
+                        LevelId = levelId,
+                        TeamId = teamId,
+                        GameId = gameId,
+                        ScoreNumber = scoreNumber
+                    });
+                }
+                txtScoreDoiSo4.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FF000000"));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnPlusScoreDoiSo5_Click(object sender, RoutedEventArgs e)
+        {
+            int score = int.Parse(txtScoreDoiSo5.Text.Trim());
+            txtScoreDoiSo5.Text = (score + 10).ToString();
+
+            try
+            {
+                Guid levelId = (Guid)cmbLevel.SelectedValue;
+                Guid gameId = (Guid)cmbGame.SelectedValue;
+                Guid teamId = (Guid)lblDoiSo5.Tag;
+                int scoreNumber = int.Parse(txtScoreDoiSo5.Text.Trim());
+
+                if ((new BLScore().Get(teamId, levelId, gameId)) == null)
+                {
+                    (new BLScore()).Insert(new Score
+                    {
+                        LevelId = levelId,
+                        TeamId = teamId,
+                        GameId = gameId,
+                        ScoreNumber = scoreNumber
+                    });
+                }
+                else
+                {
+                    (new BLScore()).Update(new Score
+                    {
+                        LevelId = levelId,
+                        TeamId = teamId,
+                        GameId = gameId,
+                        ScoreNumber = scoreNumber
+                    });
+                }
+                txtScoreDoiSo5.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FF000000"));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnMinusScoreDoiSo5_Click(object sender, RoutedEventArgs e)
+        {
+            int score = int.Parse(txtScoreDoiSo5.Text.Trim());
+            txtScoreDoiSo5.Text = (score - 10).ToString();
+
+            try
+            {
+                Guid levelId = (Guid)cmbLevel.SelectedValue;
+                Guid gameId = (Guid)cmbGame.SelectedValue;
+                Guid teamId = (Guid)lblDoiSo5.Tag;
+                int scoreNumber = int.Parse(txtScoreDoiSo5.Text.Trim());
+
+                if ((new BLScore().Get(teamId, levelId, gameId)) == null)
+                {
+                    (new BLScore()).Insert(new Score
+                    {
+                        LevelId = levelId,
+                        TeamId = teamId,
+                        GameId = gameId,
+                        ScoreNumber = scoreNumber
+                    });
+                }
+                else
+                {
+                    (new BLScore()).Update(new Score
+                    {
+                        LevelId = levelId,
+                        TeamId = teamId,
+                        GameId = gameId,
+                        ScoreNumber = scoreNumber
+                    });
+                }
+                txtScoreDoiSo5.Foreground = (Brush)(new BrushConverter().ConvertFrom("#FF000000"));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

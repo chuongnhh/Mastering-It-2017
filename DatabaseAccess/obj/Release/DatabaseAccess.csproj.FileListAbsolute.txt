@@ -17,3 +17,4 @@ D:\Project\MasteringIt\DatabaseAccess\obj\Release\DatabaseAccess.Migrations.v2.r
 D:\Project\MasteringIt\DatabaseAccess\obj\Release\DatabaseAccess.csproj.GenerateResource.Cache
 D:\Project\MasteringIt\DatabaseAccess\obj\Release\DatabaseAccess.dll
 D:\Project\MasteringIt\DatabaseAccess\obj\Release\DatabaseAccess.pdb
+D:\Project\MasteringIt\DatabaseAccess\obj\Release\DatabaseAccess.Migrations.v3.resources

@@ -50,6 +50,7 @@ namespace BusinessLogic
 
             return db.Teams.OrderByDescending(x => x.Scores.Max(z => z.ScoreNumber))
                 .Where(x => x.LevelId == LevelId).Take(teamNumber)
+                .OrderBy(x => x.OrdeBy)
                 .ToList<Team>();
         }
 

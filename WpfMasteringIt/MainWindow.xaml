@@ -389,40 +389,40 @@
                         <Label x:Name="lblDoiSo1" Content="" Background="#FFE6E6E6" Height="40" Foreground="Black" VerticalContentAlignment="Center" Padding="0" FontSize="26" FontFamily="Calibri" HorizontalContentAlignment="Center" FontWeight="Bold" Margin="0" VerticalAlignment="Center"/>
                         <Grid Margin="0" VerticalAlignment="Top">
                             <TextBox x:Name="txtScoreDoiSo1" Height="40" Margin="23,0" TextWrapping="Wrap" BorderThickness="0" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Calibri" FontWeight="Bold" MaxLength="4" Background="White" KeyDown="txtScoreDoiSo1_KeyDown" TextChanged="txtScoreDoiSo1_TextChanged"/>
-                            <Button x:Name="btnPlusScoreDoiSo1" Content="Button" Height="40" Margin="1,1,0,1" Style="{DynamicResource btnPlusScoreDoiSo1}" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" Width="23" HorizontalAlignment="Right" Padding="0"/>
-                            <Button x:Name="btnMinusScoreDoiSo1" Content="Button" Height="40" Margin="1" Style="{DynamicResource btnMinusScoreDoiSo1}" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" HorizontalAlignment="Left" Width="23" Background="#FFF0F0F0" Padding="0"/>
+                            <Button x:Name="btnPlusScoreDoiSo1" Content="Button" Height="40" Margin="1,1,0,1" Style="{DynamicResource btnPlusScoreDoiSo1}" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" Width="23" HorizontalAlignment="Right" Padding="0" Click="btnPlusScoreDoiSo1_Click"/>
+                            <Button x:Name="btnMinusScoreDoiSo1" Content="Button" Height="40" Margin="1" Style="{DynamicResource btnMinusScoreDoiSo1}" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" HorizontalAlignment="Left" Width="23" Background="#FFF0F0F0" Padding="0" Click="btnMinusScoreDoiSo1_Click"/>
                         </Grid>
                     </StackPanel>
                     <StackPanel Margin="0,10,0,0">
                         <Label x:Name="lblDoiSo2" Content="" Background="#FFE6E6E6" Height="40" Foreground="Black" VerticalContentAlignment="Center" Padding="0" FontSize="26" FontFamily="Calibri" HorizontalContentAlignment="Center" FontWeight="Bold" Margin="0" VerticalAlignment="Center"/>
                         <Grid Margin="0" VerticalAlignment="Top">
                             <TextBox x:Name="txtScoreDoiSo2" Height="40" Margin="23,0" TextWrapping="Wrap" BorderThickness="0" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Calibri" FontWeight="Bold" MaxLength="4" Background="White" KeyDown="txtScoreDoiSo2_KeyDown" TextChanged="txtScoreDoiSo2_TextChanged"/>
-                            <Button x:Name="btnPlusScoreDoiSo2" Content="Button" Height="40" Margin="1,1,0,1" Style="{DynamicResource btnPlusScoreDoiSo1}" VerticalAlignment="Top" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" Width="23" HorizontalAlignment="Right"/>
-                            <Button x:Name="btnMinusScoreDoiSo2" Content="Button" Height="40" Margin="1" Style="{DynamicResource btnMinusScoreDoiSo1}" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" HorizontalAlignment="Left" Width="23" Background="#FFF0F0F0"/>
+                            <Button x:Name="btnPlusScoreDoiSo2" Content="Button" Height="40" Margin="1,1,0,1" Style="{DynamicResource btnPlusScoreDoiSo1}" VerticalAlignment="Top" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" Width="23" HorizontalAlignment="Right" Click="btnPlusScoreDoiSo2_Click"/>
+                            <Button x:Name="btnMinusScoreDoiSo2" Content="Button" Height="40" Margin="1" Style="{DynamicResource btnMinusScoreDoiSo1}" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" HorizontalAlignment="Left" Width="23" Background="#FFF0F0F0" Click="btnMinusScoreDoiSo2_Click"/>
                         </Grid>
                     </StackPanel>
                     <StackPanel Margin="0,10,0,0">
                         <Label x:Name="lblDoiSo3" Content="" Background="#FFE6E6E6" Height="40" Foreground="Black" VerticalContentAlignment="Center" Padding="0" FontSize="26" FontFamily="Calibri" HorizontalContentAlignment="Center" FontWeight="Bold" Margin="0" VerticalAlignment="Center"/>
                         <Grid Margin="0" VerticalAlignment="Top">
                             <TextBox x:Name="txtScoreDoiSo3" Height="40" Margin="23,0" TextWrapping="Wrap" BorderThickness="0" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Calibri" FontWeight="Bold" MaxLength="4" Background="White" KeyDown="txtScoreDoiSo3_KeyDown" TextChanged="txtScoreDoiSo3_TextChanged"/>
-                            <Button x:Name="btnPlusScoreDoiSo3" Content="Button" Height="40" Margin="1,1,0,1" Style="{DynamicResource btnPlusScoreDoiSo1}" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" Width="23" HorizontalAlignment="Right"/>
-                            <Button x:Name="btnMinusScoreDoiSo3" Content="Button" Height="40" Margin="1,1,3,1" Style="{DynamicResource btnMinusScoreDoiSo1}" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" HorizontalAlignment="Left" Width="23" Background="#FFF0F0F0"/>
+                            <Button x:Name="btnPlusScoreDoiSo3" Content="Button" Height="40" Margin="1,1,0,1" Style="{DynamicResource btnPlusScoreDoiSo1}" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" Width="23" HorizontalAlignment="Right" Click="btnPlusScoreDoiSo3_Click"/>
+                            <Button x:Name="btnMinusScoreDoiSo3" Content="Button" Height="40" Margin="1,1,3,1" Style="{DynamicResource btnMinusScoreDoiSo1}" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" HorizontalAlignment="Left" Width="23" Background="#FFF0F0F0" Click="btnMinusScoreDoiSo3_Click"/>
                         </Grid>
                     </StackPanel>
                     <StackPanel Margin="0,10,0,0">
                         <Label x:Name="lblDoiSo4" Content="" Background="#FFE6E6E6" Height="40" Foreground="Black" VerticalContentAlignment="Center" Padding="0" FontSize="26" FontFamily="Calibri" HorizontalContentAlignment="Center" FontWeight="Bold" Margin="0" VerticalAlignment="Center"/>
                         <Grid Margin="0" VerticalAlignment="Top">
-                            <TextBox x:Name="txtScoreDoiSo4" Height="40" Margin="23,0" TextWrapping="Wrap" BorderThickness="0" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Calibri" FontWeight="Bold" MaxLength="4" Background="White" KeyDown="txtScoreDoiSo3_KeyDown" TextChanged="txtScoreDoiSo4_TextChanged"/>
-                            <Button x:Name="btnPlusScoreDoiSo4" Content="Button" Height="40" Margin="1,1,0,1" Style="{DynamicResource btnPlusScoreDoiSo1}" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" Width="23" HorizontalAlignment="Right"/>
-                            <Button x:Name="btnMinusScoreDoiSo4" Content="Button" Height="40" Margin="1" Style="{DynamicResource btnMinusScoreDoiSo1}" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" HorizontalAlignment="Left" Width="23" Background="#FFF0F0F0"/>
+                            <TextBox x:Name="txtScoreDoiSo4" Height="40" Margin="23,0" TextWrapping="Wrap" BorderThickness="0" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Calibri" FontWeight="Bold" MaxLength="4" Background="White" KeyDown="txtScoreDoiSo4_KeyDown" TextChanged="txtScoreDoiSo4_TextChanged"/>
+                            <Button x:Name="btnPlusScoreDoiSo4" Content="Button" Height="40" Margin="1,1,0,1" Style="{DynamicResource btnPlusScoreDoiSo1}" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" Width="23" HorizontalAlignment="Right" Click="btnPlusScoreDoiSo4_Click"/>
+                            <Button x:Name="btnMinusScoreDoiSo4" Content="Button" Height="40" Margin="1" Style="{DynamicResource btnMinusScoreDoiSo1}" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" HorizontalAlignment="Left" Width="23" Background="#FFF0F0F0" Click="btnMinusScoreDoiSo4_Click"/>
                         </Grid>
                     </StackPanel>
                     <StackPanel Margin="0,10,0,0">
                         <Label x:Name="lblDoiSo5" Content="" Background="#FFE6E6E6" Height="40" Foreground="Black" VerticalContentAlignment="Center" Padding="0" FontSize="26" FontFamily="Calibri" HorizontalContentAlignment="Center" FontWeight="Bold" Margin="0" VerticalAlignment="Center"/>
                         <Grid Margin="0" VerticalAlignment="Top">
                             <TextBox x:Name="txtScoreDoiSo5" Height="40" Margin="23,0" TextWrapping="Wrap" BorderThickness="0" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Calibri" FontWeight="Bold" MaxLength="4" Background="White" KeyDown="txtScoreDoiSo5_KeyDown" TextChanged="txtScoreDoiSo5_TextChanged"/>
-                            <Button x:Name="btnPlusScoreDoiSo5" Content="Button" Height="40" Margin="1,1,0,1" Style="{DynamicResource btnPlusScoreDoiSo1}" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" Width="23" HorizontalAlignment="Right"/>
-                            <Button x:Name="btnMinusScoreDoiSo5" Content="Button" Height="40" Margin="1" Style="{DynamicResource btnMinusScoreDoiSo1}" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" HorizontalAlignment="Left" Width="23" Background="#FFF0F0F0"/>
+                            <Button x:Name="btnPlusScoreDoiSo5" Content="Button" Height="40" Margin="1,1,0,1" Style="{DynamicResource btnPlusScoreDoiSo1}" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" Width="23" HorizontalAlignment="Right" Click="btnPlusScoreDoiSo5_Click"/>
+                            <Button x:Name="btnMinusScoreDoiSo5" Content="Button" Height="40" Margin="1" Style="{DynamicResource btnMinusScoreDoiSo1}" BorderThickness="0" FontFamily="Calibri" Cursor="Hand" HorizontalAlignment="Left" Width="23" Background="#FFF0F0F0" Click="btnMinusScoreDoiSo5_Click"/>
                         </Grid>
                     </StackPanel>
                 </StackPanel>

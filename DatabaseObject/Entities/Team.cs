@@ -21,6 +21,7 @@ namespace DatabaseObject.Entities
         [Key]
         public Guid Id { get; set; }
         public string TeamName { get; set; }
+        public int OrdeBy { get; set; }
 
         public virtual IList<Member> Members { get; set; }
 

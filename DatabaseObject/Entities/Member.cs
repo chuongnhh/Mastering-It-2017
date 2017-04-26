@@ -25,5 +25,6 @@ namespace DatabaseObject.Entities
         [ForeignKey("Team")]
         public Guid TeamId { get; set; }
         public virtual Team Team { get; set; }
+
     }
 }
